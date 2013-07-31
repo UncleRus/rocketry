@@ -1,0 +1,37 @@
+# This footprint was automatically converted from Eagle library ref-packages.lbr at 31.08.11 23:29
+# Library info: Reference Package
+# Package info: DIODE
+
+Element ["" "DIODE" "" "" 0 0 -28500 -18500 0 100 ""] (
+	Pad [36475 0 43525 0 7050 2000 7650 "A" "A" ""] Pin [40000 0 4700 0 4700 4700 "" "" "hole"]
+	Pad [-43525 0 -36475 0 7050 2000 7650 "C" "C" ""] Pin [-40000 0 4700 0 4700 4700 "" "" "hole"]
+	ElementLine [-28500 -12500 -28500 12500 600]
+	ElementLine [-28500 12500 7500 12500 600]
+	ElementLine [7500 -12500 -28500 -12500 600]
+	ElementLine [28500 5000 28500 -5000 600]
+	ElementLine [7500 12500 7500 5000 600]
+	ElementLine [7500 5000 7500 -5000 600]
+	ElementLine [7500 -5000 7500 -12500 600]
+	ElementLine [40000 0 34000 0 3600]
+	ElementLine [-34000 0 -40000 0 3600]
+	ElementLine [-16500 0 -11500 0 600]
+	ElementLine [-11500 0 -7000 -2300 600]
+	ElementLine [-7000 -2300 -7000 2300 600]
+	ElementLine [-7000 2300 -11500 0 600]
+	ElementLine [-11500 0 -2500 0 600]
+	ElementLine [-13000 -1800 -13000 -2500 600]
+	ElementLine [-13000 -2500 -11500 -2500 600]
+	ElementLine [-11500 -2500 -11500 0 600]
+	ElementLine [-10000 1800 -10000 2500 600]
+	ElementLine [-10000 2500 -11500 2500 600]
+	ElementLine [-11500 2500 -11500 0 600]
+	ElementArc [18000 12500 10259 10259 226 86 600]
+	ElementArc [18000 -12500 10259 10259 406 86 600]
+	ElementLine [28500 -5000 25000 -5000 600]
+	ElementLine [11000 -5000 7500 -5000 600]
+	ElementLine [7500 5000 11000 5000 600]
+	ElementLine [25000 5000 28500 5000 600]
+	ElementLine [28500 1700 34300 1700 100] ElementLine [34300 1700 34300 -1700 100] ElementLine [34300 -1700 28500 -1700 100] ElementLine [28500 -1700 28500 1700 100]
+	ElementLine [-34300 1700 -28500 1700 100] ElementLine [-28500 1700 -28500 -1700 100] ElementLine [-28500 -1700 -34300 -1700 100] ElementLine [-34300 -1700 -34300 1700 100]
+	ElementLine [-26500 12500 -24000 12500 100] ElementLine [-24000 12500 -24000 -12500 100] ElementLine [-24000 -12500 -26500 -12500 100] ElementLine [-26500 -12500 -26500 12500 100]
+)

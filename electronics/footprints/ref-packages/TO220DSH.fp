@@ -1,0 +1,23 @@
+# This footprint was automatically converted from Eagle library ref-packages.lbr at 31.08.11 23:30
+# Library info: Reference Package
+# Package info: TO 220 DSH vertical (Anode1; Anode2; Gate)
+
+Element ["" "TO 220 DSH vertical (Anode1; Anode2; Gate)" "" "" 0 0 5500 18800 0 100 ""] (
+	Pad [-10000 7000 -10000 13000 6000 2000 6600 "A1" "A1" ""] Pin [-10000 10000 4000 0 4000 4000 "" "" "hole"]
+	Pad [0 27000 0 33000 6000 2000 6600 "A2" "A2" ""] Pin [0 30000 4000 0 4000 4000 "" "" "hole"]
+	Pad [10000 7000 10000 13000 6000 2000 6600 "G" "G" ""] Pin [10000 10000 4000 0 4000 4000 "" "" "hole"]
+	ElementArc [-17700 14600 1000 1000 0 360 0]
+	ElementLine [18500 17000 19500 16000 600]
+	ElementLine [18500 17000 -18500 17000 600]
+	ElementLine [-19500 16000 -18500 17000 600]
+	ElementLine [20000 4500 19500 16000 600]
+	ElementLine [-19500 16000 -20000 4500 600]
+	ElementLine [-21000 3000 21000 3000 100] ElementLine [21000 3000 21000 0 100] ElementLine [21000 0 -21000 0 100] ElementLine [-21000 0 -21000 3000 100]
+	ElementLine [-21000 5000 -13500 5000 100] ElementLine [-13500 5000 -13500 3000 100] ElementLine [-13500 3000 -21000 3000 100] ElementLine [-21000 3000 -21000 5000 100]
+	ElementLine [-13500 5000 -6500 5000 100] ElementLine [-6500 5000 -6500 3000 100] ElementLine [-6500 3000 -13500 3000 100] ElementLine [-13500 3000 -13500 5000 100]
+	ElementLine [13500 5000 21000 5000 100] ElementLine [21000 5000 21000 3000 100] ElementLine [21000 3000 13500 3000 100] ElementLine [13500 3000 13500 5000 100]
+	ElementLine [6500 5000 13500 5000 100] ElementLine [13500 5000 13500 3000 100] ElementLine [13500 3000 6500 3000 100] ElementLine [6500 3000 6500 5000 100]
+	ElementLine [-2000 30000 2000 30000 100] ElementLine [2000 30000 2000 24500 100] ElementLine [2000 24500 -2000 24500 100] ElementLine [-2000 24500 -2000 30000 100]
+	ElementLine [-2000 24500 2000 24500 100] ElementLine [2000 24500 2000 17000 100] ElementLine [2000 17000 -2000 17000 100] ElementLine [-2000 17000 -2000 24500 100]
+	ElementLine [-6500 5000 6500 5000 100] ElementLine [6500 5000 6500 3000 100] ElementLine [6500 3000 -6500 3000 100] ElementLine [-6500 3000 -6500 5000 100]
+)

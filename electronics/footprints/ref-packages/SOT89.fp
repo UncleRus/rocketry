@@ -1,0 +1,30 @@
+# This footprint was automatically converted from Eagle library ref-packages.lbr at 31.08.11 23:30
+# Library info: Reference Package
+# Package info: SOT98 PK (R-PDSO-G3)
+
+Element ["" "SOT98 PK (R-PDSO-G3)" "" "" 0 0 -10000 -17500 0 100 ""] (
+	Pad [-5901 6814 -5901 8783 3937 2000 4537 "1" "1" "square"]
+	Pad [0 4830 0 8767 3937 2000 4537 "2" "2" "square"]
+	Pad [0 -6653 0 -748 8661 2000 9261 "2@1" "2@1" ""]
+	Pad [5901 6814 5901 8783 3937 2000 4537 "3" "3" "square"]
+	ElementLine [8799 4901 -8799 4901 500]
+	ElementLine [8799 -4799 8799 4901 500]
+	ElementLine [-8799 4901 -8799 -4799 500]
+	ElementLine [-8799 -4799 8799 -4799 500]
+	ElementLine [-3100 -6200 -1400 -7900 786]
+	ElementLine [-1400 -7900 1400 -7900 786]
+	ElementLine [1400 -7900 3100 -6200 786]
+	ElementLine [3100 -6200 3100 -5100 786]
+	ElementLine [3100 -5100 -3100 -5100 786]
+	ElementLine [-3100 -5100 -3100 -6200 786]
+	ElementLine [-6800 8300 -5000 8300 100] ElementLine [-5000 8300 -5000 5000 100] ElementLine [-5000 5000 -6800 5000 100] ElementLine [-6800 5000 -6800 8300 100]
+	ElementLine [5000 8300 6800 8300 100] ElementLine [6800 8300 6800 5000 100] ElementLine [6800 5000 5000 5000 100] ElementLine [5000 5000 5000 8300 100]
+	ElementLine [-1100 8300 1100 8300 100] ElementLine [1100 8300 1100 5000 100] ElementLine [1100 5000 -1100 5000 100] ElementLine [-1100 5000 -1100 8300 100]
+	ElementLine [-1574 10551 1574 10551 100] ElementLine [1574 10551 1574 5039 100] ElementLine [1574 5039 -1574 5039 100] ElementLine [-1574 5039 -1574 10551 100]
+	ElementLine [-7972 10925 -3838 10925 100] ElementLine [-3838 10925 -3838 4724 100] ElementLine [-3838 4724 -7972 4724 100] ElementLine [-7972 4724 -7972 10925 100]
+	ElementLine [3838 10925 7972 10925 100] ElementLine [7972 10925 7972 4724 100] ElementLine [7972 4724 3838 4724 100] ElementLine [3838 4724 3838 10925 100]
+	ElementLine [-2066 10925 2066 10925 100] ElementLine [2066 10925 2066 4724 100] ElementLine [2066 4724 -2066 4724 100] ElementLine [-2066 4724 -2066 10925 100]
+	ElementLine [4330 10551 7480 10551 100] ElementLine [7480 10551 7480 5039 100] ElementLine [7480 5039 4330 5039 100] ElementLine [4330 5039 4330 10551 100]
+	ElementLine [-7480 10551 -4330 10551 100] ElementLine [-4330 10551 -4330 5039 100] ElementLine [-4330 5039 -7480 5039 100] ElementLine [-7480 5039 -7480 10551 100]
+	
+)

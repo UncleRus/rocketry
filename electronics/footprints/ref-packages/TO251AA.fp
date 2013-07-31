@@ -1,0 +1,35 @@
+# This footprint was automatically converted from Eagle library ref-packages.lbr at 31.08.11 23:30
+# Library info: Reference Package
+# Package info: I-Pak International Rectifier
+
+Element ["" "I-Pak International Rectifier" "" "" 0 0 -10000 -20000 0 100 ""] (
+	Pad [-9000 18250 -9000 23750 5500 2000 6100 "1" "1" ""] Pin [-9000 21000 3500 0 3500 3500 "" "" "hole"]
+	Pad [0 18250 0 23750 5500 2000 6100 "2" "2" ""] Pin [0 21000 3500 0 3500 3500 "" "" "hole"]
+	Pad [9000 18250 9000 23750 5500 2000 6100 "3" "3" ""] Pin [9000 21000 3500 0 3500 3500 "" "" "hole"]
+	Pad [0 -19250 0 -15750 21000 2000 21600 "4" "4" "square"]
+	ElementLine [-9000 21000 -9000 12000 3500]
+	ElementLine [0 21000 0 12000 3500]
+	ElementLine [9000 21000 9000 12000 3500]
+	ElementLine [-9000 12000 -9000 9000 3500]
+	ElementLine [0 12000 0 9000 3500]
+	ElementLine [9000 12000 9000 9000 3500]
+	ElementLine [-12500 -500 12500 -500 1000]
+	ElementLine [12500 -500 12500 -22000 1000]
+	ElementLine [12500 -22000 10500 -24000 1000]
+	ElementLine [10500 -24000 10000 -24000 1000]
+	ElementLine [10000 -24000 -10000 -24000 1000]
+	ElementLine [-10000 -24000 -10500 -24000 1000]
+	ElementLine [-10500 -24000 -12500 -22000 1000]
+	ElementLine [-12500 -22000 -12500 -500 1000]
+	ElementLine [-10000 -24000 -10000 -27000 1000]
+	ElementLine [-10000 -27000 -6500 -29000 1000]
+	ElementLine [-6500 -29000 6500 -29000 1000]
+	ElementLine [6500 -29000 10000 -27000 1000]
+	ElementLine [10000 -27000 10000 -24000 1000]
+	ElementLine [-2200 9000 2200 9000 100] ElementLine [2200 9000 2200 6000 100] ElementLine [2200 6000 -2200 6000 100] ElementLine [-2200 6000 -2200 9000 100]
+	ElementLine [-1700 6000 1700 6000 100] ElementLine [1700 6000 1700 0 100] ElementLine [1700 0 -1700 0 100] ElementLine [-1700 0 -1700 6000 100]
+	ElementLine [-11200 9000 -6800 9000 100] ElementLine [-6800 9000 -6800 6000 100] ElementLine [-6800 6000 -11200 6000 100] ElementLine [-11200 6000 -11200 9000 100]
+	ElementLine [6800 9000 11200 9000 100] ElementLine [11200 9000 11200 6000 100] ElementLine [11200 6000 6800 6000 100] ElementLine [6800 6000 6800 9000 100]
+	ElementLine [-10700 6000 -7300 6000 100] ElementLine [-7300 6000 -7300 0 100] ElementLine [-7300 0 -10700 0 100] ElementLine [-10700 0 -10700 6000 100]
+	ElementLine [7300 6000 10700 6000 100] ElementLine [10700 6000 10700 0 100] ElementLine [10700 0 7300 0 100] ElementLine [7300 0 7300 6000 100]
+)

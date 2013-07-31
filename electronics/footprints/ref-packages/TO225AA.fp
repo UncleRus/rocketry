@@ -1,0 +1,36 @@
+# This footprint was automatically converted from Eagle library ref-packages.lbr at 31.08.11 23:30
+# Library info: Reference Package
+# Package info: TO-225
+
+Element ["" "TO-225" "" "" 0 0 11875 -26250 2 100 ""] (
+	Pad [-9375 42400 -9375 47600 5200 2000 5800 "1" "1" ""] Pin [-9375 45000 3200 0 3200 3200 "" "" "hole"]
+	Pad [0 42400 0 47600 5200 2000 5800 "2" "2" ""] Pin [0 45000 3200 0 3200 3200 "" "" "hole"]
+	Pad [9375 42400 9375 47600 5200 2000 5800 "3" "3" ""] Pin [9375 45000 3200 0 3200 3200 "" "" "hole"]
+	Pin [0 0 13000 2000 13600 13000 "" "" "hole"]
+	ElementArc [0 0 15000 15000 0 360 0]
+	ElementArc [0 0 15000 15000 0 360 0]
+	ElementArc [0 0 6500 6500 0 360 500]
+	ElementLine [-13750 27500 -13750 -15000 500]
+	ElementLine [-13750 -15000 13750 -15000 500]
+	ElementLine [13750 -15000 13750 27500 500]
+	ElementLine [-13750 27500 13750 27500 500]
+	ElementLine [-9374 31874 -9374 37500 1600]
+	ElementLine [0 30625 0 37500 1600]
+	ElementLine [9375 31875 9374 37500 1600]
+	ElementLine [-10000 -12500 -10000 13125 500]
+	ElementLine [-10000 13125 10000 13125 500]
+	ElementLine [10000 13125 10000 -12500 500]
+	ElementLine [10000 -12500 -10000 -12500 500]
+	ElementArc [0 1 9000 9000 302 25 500]
+	ElementLine [-3027 -5751 -4877 -7562 500]
+	ElementLine [3027 -5751 4877 -7562 500]
+	ElementLine [5822 -2889 7673 -4700 500]
+	ElementArc [-1 0 9000 9000 211 25 500]
+	ElementLine [-2000 6185 -2000 8775 500]
+	ElementLine [2000 6185 2000 8775 500]
+	ElementArc [0 0 9000 9000 437 25 500]
+	ElementLine [-5822 -2889 -7673 -4700 500]
+	ElementLine [-10625 32500 -8125 32500 100] ElementLine [-8125 32500 -8125 27500 100] ElementLine [-8125 27500 -10625 27500 100] ElementLine [-10625 27500 -10625 32500 100]
+	ElementLine [8125 32500 10625 32500 100] ElementLine [10625 32500 10625 27500 100] ElementLine [10625 27500 8125 27500 100] ElementLine [8125 27500 8125 32500 100]
+	ElementLine [-1250 31250 1250 31250 100] ElementLine [1250 31250 1250 27500 100] ElementLine [1250 27500 -1250 27500 100] ElementLine [-1250 27500 -1250 31250 100]
+)

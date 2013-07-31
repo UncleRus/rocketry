@@ -1,0 +1,18 @@
+# This footprint was automatically converted from Eagle library ref-packages.lbr at 31.08.11 23:30
+# Library info: Reference Package
+# Package info: Small Outline Transistor; 4 leads Reflow soldering
+
+Element ["" "Small Outline Transistor; 4 leads Reflow soldering" "" "" 0 0 -4330 -10708 0 100 ""] (
+	Pad [-2165 3149 -1771 3149 3149 2000 3749 "1" "1" "square"]
+	Pad [2559 2755 2559 3543 2362 2000 2962 "2" "2" "square"]
+	Pad [2559 -3543 2559 -2755 2362 2000 2962 "3" "3" "square"]
+	Pad [-2559 -3543 -2559 -2755 2362 2000 2962 "4" "4" "square"]
+	ElementLine [-3937 -2165 3937 -2165 800]
+	ElementLine [3937 -2165 3937 2165 800]
+	ElementLine [3937 2165 -3937 2165 800]
+	ElementLine [-3937 2165 -3937 -2165 800]
+	ElementLine [-3346 4330 -590 4330 100] ElementLine [-590 4330 -590 2362 100] ElementLine [-590 2362 -3346 2362 100] ElementLine [-3346 2362 -3346 4330 100]
+	ElementLine [1771 4330 3346 4330 100] ElementLine [3346 4330 3346 2362 100] ElementLine [3346 2362 1771 2362 100] ElementLine [1771 2362 1771 4330 100]
+	ElementLine [1771 -2362 3346 -2362 100] ElementLine [3346 -2362 3346 -4330 100] ElementLine [3346 -4330 1771 -4330 100] ElementLine [1771 -4330 1771 -2362 100]
+	ElementLine [-3346 -2362 -1771 -2362 100] ElementLine [-1771 -2362 -1771 -4330 100] ElementLine [-1771 -4330 -3346 -4330 100] ElementLine [-3346 -4330 -3346 -2362 100]
+)

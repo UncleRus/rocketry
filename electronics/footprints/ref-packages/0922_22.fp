@@ -1,0 +1,30 @@
+# This footprint was automatically converted from Eagle library ref-packages.lbr at 31.08.11 23:29
+# Library info: Reference Package
+# Package info: RESISTOR
+
+Element ["" "RESISTOR" "" "" 0 0 -40000 -25100 0 100 ""] (
+	Pin [-45000 0 6000 2000 6600 4000 "1" "1" "octagon"]
+	Pin [45000 0 6000 2000 6600 4000 "2" "2" "octagon"]
+	ElementLine [45000 0 42500 0 3200]
+	ElementLine [-45000 0 -42500 0 3200]
+	ElementLine [-40000 16500 -40000 -16500 600]
+	ElementLine [-38500 -18000 -35000 -18000 600]
+	ElementLine [-34000 -17000 -35000 -18000 600]
+	ElementLine [-38500 18000 -35000 18000 600]
+	ElementLine [-34000 17000 -35000 18000 600]
+	ElementLine [34000 -17000 35000 -18000 600]
+	ElementLine [34000 -17000 -34000 -17000 600]
+	ElementLine [34000 17000 35000 18000 600]
+	ElementLine [34000 17000 -34000 17000 600]
+	ElementLine [38500 -18000 35000 -18000 600]
+	ElementLine [38500 18000 35000 18000 600]
+	ElementLine [40000 16500 40000 -16500 600]
+	ElementArc [-38500 16500 1500 1500 360 90 600]
+	ElementArc [-38500 -16500 1500 1500 270 90 600]
+	ElementArc [38500 16500 1500 1500 450 90 600]
+	ElementArc [38500 -16500 1500 1500 180 90 600]
+	ElementLine [-42200 1600 -40000 1600 100] ElementLine [-40000 1600 -40000 -1600 100] ElementLine [-40000 -1600 -42200 -1600 100] ElementLine [-42200 -1600 -42200 1600 100]
+	ElementLine [40000 1600 40600 1600 100] ElementLine [40600 1600 40600 -1600 100] ElementLine [40600 -1600 40000 -1600 100] ElementLine [40000 -1600 40000 1600 100]
+	ElementLine [-40600 1600 -40000 1600 100] ElementLine [-40000 1600 -40000 -1600 100] ElementLine [-40000 -1600 -40600 -1600 100] ElementLine [-40600 -1600 -40600 1600 100]
+	ElementLine [40000 1600 42200 1600 100] ElementLine [42200 1600 42200 -1600 100] ElementLine [42200 -1600 40000 -1600 100] ElementLine [40000 -1600 40000 1600 100]
+)

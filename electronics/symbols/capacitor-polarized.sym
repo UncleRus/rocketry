@@ -1,0 +1,33 @@
+v 20100214 2
+P 0 300 200 300 1 0 0
+{
+T 1000 1300 5 10 0 0 0 0 1
+pintype=pas
+T 1000 1600 5 10 0 1 0 0 1
+pinnumber=plus
+T 1000 1450 5 10 0 0 0 0 1
+pinseq=1
+}
+L 200 400 200 200 3 0 0 0 -1 -1
+L 250 400 250 200 3 0 0 0 -1 -1
+P 450 300 250 300 1 0 0
+{
+T 1000 750 5 10 0 0 0 0 1
+pintype=pas
+T 1000 1050 5 10 0 1 0 0 1
+pinnumber=minus
+T 1000 900 5 10 0 0 0 0 1
+pinseq=2
+}
+T 95 450 8 10 1 1 0 0 1
+refdes=C?
+T 45 25 8 10 1 1 0 0 1
+value=10uF
+L 125 400 125 350 3 0 0 0 -1 -1
+L 100 375 150 375 3 0 0 0 -1 -1
+T 950 450 8 10 0 0 0 0 1
+device=POLARIZED_CAPACITOR
+T 950 250 8 10 0 0 0 0 1
+author=UncleRus <unclerusATgmail.com>
+T 950 50 8 10 0 0 0 0 1
+description=50mil grid

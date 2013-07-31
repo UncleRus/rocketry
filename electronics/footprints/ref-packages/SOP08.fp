@@ -1,0 +1,30 @@
+# This footprint was automatically converted from Eagle library ref-packages.lbr at 31.08.11 23:30
+# Library info: Reference Package
+# Package info: SMALL OUTLINE PACKAGE
+
+Element ["" "SMALL OUTLINE PACKAGE" "" "" 0 0 -17500 12500 1 100 ""] (
+	Pad [-7500 7086 -7500 13385 2362 2000 2962 "1" "1" "square"]
+	Pad [-2500 7086 -2500 13385 2362 2000 2962 "2" "2" "square"]
+	Pad [2500 7086 2500 13385 2362 2000 2962 "3" "3" "square"]
+	Pad [7500 7086 7500 13385 2362 2000 2962 "4" "4" "square"]
+	Pad [7500 -13385 7500 -7086 2362 2000 2962 "5" "5" "square"]
+	Pad [2500 -13385 2500 -7086 2362 2000 2962 "6" "6" "square"]
+	Pad [-2500 -13385 -2500 -7086 2362 2000 2962 "7" "7" "square"]
+	Pad [-7500 -13385 -7500 -7086 2362 2000 2962 "8" "8" "square"]
+	ElementLine [-13385 -15354 13385 -15354 786]
+	ElementLine [13385 -15354 13385 15354 786]
+	ElementLine [-13385 15354 -13385 -15354 786]
+	ElementLine [12086 -8897 12086 8897 800]
+	ElementLine [12086 8897 -12086 8897 800]
+	ElementLine [-12086 8897 -12086 -8897 800]
+	ElementLine [-12086 -8897 12086 -8897 800]
+	ElementLine [13385 15354 -13385 15354 786]
+	ElementLine [-8483 13740 -6516 13740 100] ElementLine [-6516 13740 -6516 9290 100] ElementLine [-6516 9290 -8483 9290 100] ElementLine [-8483 9290 -8483 13740 100]
+	ElementLine [-3483 13740 -1516 13740 100] ElementLine [-1516 13740 -1516 9290 100] ElementLine [-1516 9290 -3483 9290 100] ElementLine [-3483 9290 -3483 13740 100]
+	ElementLine [1516 13740 3483 13740 100] ElementLine [3483 13740 3483 9290 100] ElementLine [3483 9290 1516 9290 100] ElementLine [1516 9290 1516 13740 100]
+	ElementLine [6516 13740 8483 13740 100] ElementLine [8483 13740 8483 9290 100] ElementLine [8483 9290 6516 9290 100] ElementLine [6516 9290 6516 13740 100]
+	ElementLine [6516 -9290 8483 -9290 100] ElementLine [8483 -9290 8483 -13740 100] ElementLine [8483 -13740 6516 -13740 100] ElementLine [6516 -13740 6516 -9290 100]
+	ElementLine [1516 -9290 3483 -9290 100] ElementLine [3483 -9290 3483 -13740 100] ElementLine [3483 -13740 1516 -13740 100] ElementLine [1516 -13740 1516 -9290 100]
+	ElementLine [-3483 -9290 -1516 -9290 100] ElementLine [-1516 -9290 -1516 -13740 100] ElementLine [-1516 -13740 -3483 -13740 100] ElementLine [-3483 -13740 -3483 -9290 100]
+	ElementLine [-8483 -9290 -6516 -9290 100] ElementLine [-6516 -9290 -6516 -13740 100] ElementLine [-6516 -13740 -8483 -13740 100] ElementLine [-8483 -13740 -8483 -9290 100]
+)

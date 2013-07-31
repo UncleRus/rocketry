@@ -1,0 +1,35 @@
+# This footprint was automatically converted from Eagle library ref-packages.lbr at 31.08.11 23:30
+# Library info: Reference Package
+# Package info: micro MAX Package
+
+Element ["" "micro MAX Package" "" "" 0 0 -11889 6275 1 100 ""] (
+	Pad [-3937 7716 -3937 10000 1259 2000 1859 "1" "1" "square"]
+	Pad [-1968 7716 -1968 10000 1259 2000 1859 "2" "2" "square"]
+	Pad [0 7716 0 10000 1259 2000 1859 "3" "3" "square"]
+	Pad [1968 7716 1968 10000 1259 2000 1859 "4" "4" "square"]
+	Pad [3937 7716 3937 10000 1259 2000 1859 "5" "5" "square"]
+	Pad [3937 -10000 3937 -7716 1259 2000 1859 "6" "6" "square"]
+	Pad [1968 -10000 1968 -7716 1259 2000 1859 "7" "7" "square"]
+	Pad [0 -10000 0 -7716 1259 2000 1859 "8" "8" "square"]
+	Pad [-1968 -10000 -1968 -7716 1259 2000 1859 "9" "9" "square"]
+	Pad [-3937 -10000 -3937 -7716 1259 2000 1859 "10" "10" "square"]
+	ElementArc [-4330 4330 984 984 0 360 0]
+	ElementArc [-5511 -5511 590 590 270 90 800]
+	ElementArc [5511 -5511 590 590 180 90 800]
+	ElementArc [5511 5511 590 590 450 90 800]
+	ElementArc [-5511 5511 590 590 360 90 800]
+	ElementLine [-6102 5511 -6102 -5511 800]
+	ElementLine [-5511 -6102 5511 -6102 800]
+	ElementLine [6102 -5511 6102 5511 800]
+	ElementLine [5511 6102 -5511 6102 800]
+	ElementLine [-4437 10100 -3437 10100 100] ElementLine [-3437 10100 -3437 6400 100] ElementLine [-3437 6400 -4437 6400 100] ElementLine [-4437 6400 -4437 10100 100]
+	ElementLine [-2468 10100 -1468 10100 100] ElementLine [-1468 10100 -1468 6400 100] ElementLine [-1468 6400 -2468 6400 100] ElementLine [-2468 6400 -2468 10100 100]
+	ElementLine [-500 10100 500 10100 100] ElementLine [500 10100 500 6400 100] ElementLine [500 6400 -500 6400 100] ElementLine [-500 6400 -500 10100 100]
+	ElementLine [1468 10100 2468 10100 100] ElementLine [2468 10100 2468 6400 100] ElementLine [2468 6400 1468 6400 100] ElementLine [1468 6400 1468 10100 100]
+	ElementLine [3437 10100 4437 10100 100] ElementLine [4437 10100 4437 6400 100] ElementLine [4437 6400 3437 6400 100] ElementLine [3437 6400 3437 10100 100]
+	ElementLine [3437 -6400 4437 -6400 100] ElementLine [4437 -6400 4437 -10100 100] ElementLine [4437 -10100 3437 -10100 100] ElementLine [3437 -10100 3437 -6400 100]
+	ElementLine [1468 -6400 2468 -6400 100] ElementLine [2468 -6400 2468 -10100 100] ElementLine [2468 -10100 1468 -10100 100] ElementLine [1468 -10100 1468 -6400 100]
+	ElementLine [-500 -6400 500 -6400 100] ElementLine [500 -6400 500 -10100 100] ElementLine [500 -10100 -500 -10100 100] ElementLine [-500 -10100 -500 -6400 100]
+	ElementLine [-2468 -6400 -1468 -6400 100] ElementLine [-1468 -6400 -1468 -10100 100] ElementLine [-1468 -10100 -2468 -10100 100] ElementLine [-2468 -10100 -2468 -6400 100]
+	ElementLine [-4437 -6400 -3437 -6400 100] ElementLine [-3437 -6400 -3437 -10100 100] ElementLine [-3437 -10100 -4437 -10100 100] ElementLine [-4437 -10100 -4437 -6400 100]
+)

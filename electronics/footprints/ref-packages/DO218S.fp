@@ -1,0 +1,19 @@
+# This footprint was automatically converted from Eagle library ref-packages.lbr at 31.08.11 23:29
+# Library info: Reference Package
+# Package info: DIODE
+
+Element ["" "DIODE" "" "" 0 0 -30000 22000 0 100 ""] (
+	Pad [21500 8375 21500 16625 8250 2000 8850 "A" "A" ""] Pin [21500 12500 5500 0 5500 5500 "" "" "hole"]
+	Pad [-21500 8375 -21500 16625 8250 2000 8850 "C" "C" ""] Pin [-21500 12500 5500 0 5500 5500 "" "" "hole"]
+	ElementLine [-27500 20000 27500 20000 600]
+	ElementLine [27500 20000 29000 18500 600]
+	ElementLine [29000 18500 30000 6000 600]
+	ElementLine [-27500 20000 -29000 18500 600]
+	ElementLine [-29000 18500 -30000 6000 600]
+	ElementLine [-31000 4500 31000 4500 100] ElementLine [31000 4500 31000 0 100] ElementLine [31000 0 -31000 0 100] ElementLine [-31000 0 -31000 4500 100]
+	ElementLine [-31000 8000 -28500 8000 100] ElementLine [-28500 8000 -28500 4500 100] ElementLine [-28500 4500 -31000 4500 100] ElementLine [-31000 4500 -31000 8000 100]
+	ElementLine [28500 8000 31000 8000 100] ElementLine [31000 8000 31000 4500 100] ElementLine [31000 4500 28500 4500 100] ElementLine [28500 4500 28500 8000 100]
+	ElementLine [14000 8000 28500 8000 100] ElementLine [28500 8000 28500 4500 100] ElementLine [28500 4500 14000 4500 100] ElementLine [14000 4500 14000 8000 100]
+	ElementLine [-28500 8000 -14000 8000 100] ElementLine [-14000 8000 -14000 4500 100] ElementLine [-14000 4500 -28500 4500 100] ElementLine [-28500 4500 -28500 8000 100]
+	ElementLine [-14000 8000 14000 8000 100] ElementLine [14000 8000 14000 4500 100] ElementLine [14000 4500 -14000 4500 100] ElementLine [-14000 4500 -14000 8000 100]
+)

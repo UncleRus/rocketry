@@ -1,0 +1,35 @@
+# This footprint was automatically converted from Eagle library ref-packages.lbr at 31.08.11 23:29
+# Library info: Reference Package
+# Package info: TO-220
+
+Element ["" "TO-220" "" "" 0 0 -13000 12500 0 100 ""] (
+	Pad [-9000 2200 -9000 8800 6600 2000 7200 "B" "B" ""] Pin [-9000 5500 4400 0 4400 4400 "" "" "hole"]
+	Pad [0 2200 0 8800 6600 2000 7200 "C" "C" ""] Pin [0 5500 4400 0 4400 4400 "" "" "hole"]
+	Pad [9000 2200 9000 8800 6600 2000 7200 "E" "E" ""] Pin [9000 5500 4400 0 4400 4400 "" "" "hole"]
+	ElementLine [13000 9500 12500 9500 600]
+	ElementLine [12500 9500 5500 9500 600]
+	ElementLine [5500 9500 3500 9500 600]
+	ElementLine [3500 9500 -3500 9500 600]
+	ElementLine [-3500 9500 -5500 9500 600]
+	ElementLine [-13000 9500 -12500 9500 600]
+	ElementLine [-12500 9500 -5500 9500 600]
+	ElementLine [-13500 3500 -12500 3500 600]
+	ElementLine [-12500 3500 -5500 3500 600]
+	ElementLine [-5500 3500 -3500 3500 600]
+	ElementLine [-3500 3500 3500 3500 600]
+	ElementLine [3500 3500 5500 3500 600]
+	ElementLine [13500 3500 12500 3500 600]
+	ElementLine [12500 3500 5500 3500 600]
+	ElementLine [13500 0 11500 0 600]
+	ElementLine [11500 0 6500 0 600]
+	ElementLine [6500 0 2500 0 600]
+	ElementLine [2500 0 -2500 0 600]
+	ElementLine [-2500 0 -6500 0 600]
+	ElementLine [-13500 0 -11500 0 600]
+	ElementLine [-11500 0 -6500 0 600]
+	ElementLine [13500 0 13500 3500 600]
+	ElementLine [13500 3500 13000 9500 600]
+	ElementLine [-13500 0 -13500 3500 600]
+	ElementLine [-13500 3500 -13000 9500 600]
+	ElementLine [-12000 3500 12000 3500 100] ElementLine [12000 3500 12000 0 100] ElementLine [12000 0 -12000 0 100] ElementLine [-12000 0 -12000 3500 100]
+)

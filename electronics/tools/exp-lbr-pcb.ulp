@@ -1,0 +1,342 @@
+/**
+ * Eagle packages to PCB footprints converter v. 0.5
+ *
+ * @author Ruslan V. Uss <unclerus at gmail.com>
+ * @todo Dialog with settings (mask, clearance, elliptic pins, pad layer, 
+ *		output directory, footprints selection, rectangle thickness)
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#usage "Export whole library to PCB footprints. PCB is an interactive printed circuit board editor for the X11 window system."
+
+int pcb_text_size = 4000;
+int pcb_text_gap = 1000;
+int pcb_pad_clearance = 2000;
+int pcb_pad_mask = 600;
+
+int u2geda (int value)
+{
+	return u2mil (value) * 100;
+}
+
+string footprint_line (string val)
+{
+	return "\t" + val + "\n";
+}
+
+string get_file_name (string pkg_name)
+{
+	string masked = ":?*/\\><| ";
+	string result;
+	for (int i = 0; pkg_name [i]; i ++)
+		result [i] = strchr (masked, pkg_name [i]) >= 0 ? '_' : pkg_name [i];
+	return result;
+}
+
+string pcb_pad (UL_PAD pad)
+{
+	if (!pad) return "";
+	
+	string result;
+
+	int diameter = u2geda (pad.diameter [LAYER_BOTTOM]);
+	int x = u2geda (pad.x);
+	int y = u2geda (-pad.y);
+	int drill = u2geda (pad.drill);
+	
+	if (pad.shape [LAYER_PADS] == PAD_SHAPE_LONG 
+		&& (pad.angle == 0 || pad.angle == 90 
+			|| pad.angle == 180 || pad.angle == 270 
+			|| pad.angle == 360))
+	{
+		int rx1, ry1, rx2, ry2;
+		int offset = (pad.elongation * diameter / 100 + diameter) / 2;
+		int half = diameter / 2;
+		if (pad.angle == 0 || pad.angle == 180 || pad.angle == 360)
+		{
+			// horizontal
+			ry1 = ry2 = y;
+			rx1 = x - (offset - half);
+			rx2 = x + (offset - half);
+		}
+		else
+		{
+			// vertical
+			rx1 = rx2 = x;
+			ry1 = y - (offset - half);
+			ry2 = y + (offset - half);
+		}
+		sprintf (
+			result,
+			"Pad [%d %d %d %d %d %d %d \"%s\" \"%s\" \"\"] Pin [%d %d %d %d %d %d \"\" \"\" \"%s\"]",
+			rx1,
+			ry1,
+			rx2,
+			ry2,
+			diameter,
+			pcb_pad_clearance,
+			diameter + pcb_pad_mask,
+			pad.name,
+			pad.name,
+			x,
+			y,
+			drill,
+			0,
+			drill,
+			drill,
+			"hole"
+		);
+		return result;
+	}
+	
+	string flags = "";
+	switch (pad.shape [LAYER_PADS])
+	{
+		case PAD_SHAPE_SQUARE:
+			flags = "square";
+			break;
+		case PAD_SHAPE_OCTAGON:
+			flags = "octagon";
+			break;
+	}
+	sprintf (
+		result,
+		"Pin [%d %d %d %d %d %d \"%s\" \"%s\" \"%s\"]",
+		x,
+		y,
+		diameter,
+		pcb_pad_clearance,
+		diameter + pcb_pad_mask,
+		drill,
+		pad.name,
+		pad.name,
+		flags
+	);
+	return result;
+}
+
+string pcb_smd (UL_SMD smd)
+{
+	if (!smd) return "";
+	string result;
+	int rx1, ry1, rx2, ry2, t;
+	if (smd.dx == smd.dy)
+	{
+		rx1 = rx2 = u2geda (smd.x);
+		ry1 = ry2 = u2geda (-smd.y);
+		t = u2geda (smd.dx);
+	}
+	else if (smd.dx > smd.dy)
+	{
+		ry1 = ry2 = u2geda (-smd.y);
+		t = u2geda (smd.dy);
+		int half = smd.dy / 2;
+		int offset = smd.dx / 2;
+		rx1 = u2geda (smd.x - (offset - half));
+		rx2 = u2geda (smd.x + (offset - half));
+	}
+	else
+	{
+		rx1 = rx2 = u2geda (smd.x);
+		t = u2geda (smd.dx);
+		int half = smd.dx / 2;
+		int offset = smd.dy / 2;
+		ry1 = u2geda (-smd.y - (offset - half));
+		ry2 = u2geda (-smd.y + (offset - half));
+	}
+	string flags = smd.roundness > 0 ? "" : "square";
+	sprintf (
+		result,
+		"Pad [%d %d %d %d %d %d %d \"%s\" \"%s\" \"%s\"]",
+		rx1,
+		ry1,
+		rx2,
+		ry2,
+		t,
+		pcb_pad_clearance,
+		t + pcb_pad_mask,
+		smd.name,
+		smd.name,
+		flags
+	);
+	return result;
+}
+
+string pcb_circle (UL_CIRCLE circle)
+{
+	if (!circle) return "";
+	string result;
+	sprintf (
+		result,
+		"ElementArc [%d %d %d %d %d %d %d]",
+		u2geda (circle.x),
+		u2geda (-circle.y),
+		u2geda (circle.radius),
+		u2geda (circle.radius),
+		0,
+		360,
+		u2geda (circle.width)
+	);
+	return result;
+}
+
+string pcb_wire (UL_WIRE wire)
+{
+	if (!wire) return "";
+	string result;
+	if (!wire.arc)
+		sprintf (
+			result,
+			"ElementLine [%d %d %d %d %d]",
+			u2geda (wire.x1),
+			u2geda (-wire.y1),
+			u2geda (wire.x2),
+			u2geda (-wire.y2),
+			u2geda (wire.width)
+		);
+	else 
+		sprintf (
+			result,
+			"ElementArc [%d %d %d %d %d %d %d]",
+			u2geda (wire.arc.xc),
+			u2geda (-wire.arc.yc),
+			u2geda (wire.arc.radius),
+			u2geda (wire.arc.radius),
+			int (wire.arc.angle1 + 180),
+			int (wire.arc.angle2 - wire.arc.angle1),
+			u2geda (wire.arc.width)
+		);
+	return result;
+}
+
+string pcb_hole (UL_HOLE hole)
+{
+	if (!hole) return "";
+	string result;
+	int drill = u2geda (hole.drill);
+	sprintf (
+		result,
+		"Pin [%d %d %d %d %d %d \"%s\" \"%s\" \"%s\"]",
+		u2geda (hole.x),
+		u2geda (-hole.y),
+		drill,
+		pcb_pad_clearance,
+		drill + pcb_pad_mask,
+		drill,
+		"",
+		"",
+		"hole"
+	);
+	return result;
+}
+
+string pcb_rectangle (UL_RECTANGLE rect)
+{
+	if (!rect) return "";
+	string result;
+	int x1 = u2geda (rect.x1);
+	int y1 = u2geda (-rect.y1);
+	int x2 = u2geda (rect.x2);
+	int y2 = u2geda (-rect.y2);
+	sprintf (
+ 		result,
+		"ElementLine [%d %d %d %d %d] ElementLine [%d %d %d %d %d] ElementLine [%d %d %d %d %d] ElementLine [%d %d %d %d %d]",
+		x1, y1,
+		x2, y1,
+		100,
+		x2, y1,
+		x2, y2,
+		100,
+		x2, y2,
+		x1, y2,
+		100,
+		x1, y2,
+		x1, y1,
+		100
+	);
+	return result;
+}
+
+string pcb_polygon (UL_POLYGON poly)
+{
+	if (!poly || poly.layer == LAYER_TKEEPOUT || LAYER_BKEEPOUT 
+		|| poly.layer == LAYER_TRESTRICT  || poly.layer == LAYER_BRESTRICT
+		 || poly.layer == LAYER_VRESTRICT
+	) return "";
+	
+	string result = "\n";
+	poly.contours (wire) result += footprint_line (pcb_wire (wire));
+	return result + "\n";
+}
+
+string name_pos (UL_PACKAGE pkg)
+{
+	if (!pkg) return "";
+	string result = "0 0 0 100";
+	pkg.texts (text)
+	{
+		if (text.value != ">NAME") continue;
+		int dir = 0;
+		if (text.angle == 90) dir = 1;
+		else if (text.angle == 180) dir = 2;
+		else if (text.angle == 270) dir = 3;
+		int x = u2geda (text.x);
+		int y = u2geda (-text.y);
+		if (dir % 2 == 0) y -= pcb_text_size + pcb_text_gap;
+		else x -= pcb_text_size + pcb_text_gap;
+		sprintf (result, "%d %d %d %d", x, y, dir, pcb_text_size / 40);
+	}
+	return result;
+}
+
+string pcb_package (UL_PACKAGE pkg) 
+{
+	if (!pkg) return "";
+	string result;
+	sprintf (result, "Element [\"\" \"%s\" \"\" \"\" 0 0 " + name_pos (pkg)  + " \"\"] (\n", pkg.headline);
+	pkg.contacts (contact)
+	{
+		if (contact.pad) result += footprint_line (pcb_pad (contact.pad));
+		if (contact.smd) result += footprint_line (pcb_smd (contact.smd));
+	}
+	pkg.holes (hole) 		result += footprint_line (pcb_hole (hole));
+	pkg.circles (circle) 	result += footprint_line (pcb_circle (circle));
+	pkg.wires (wire) 		result += footprint_line (pcb_wire (wire));
+	pkg.rectangles (rect) 	result += footprint_line (pcb_rectangle (rect));
+	pkg.polygons (poly) 	result += footprint_line (pcb_polygon (poly));
+	return result + ")";
+}
+
+/////////////////////////////////////////////////////////////
+
+string path = dlgDirectory ("Select output path", "");
+
+library (lib)
+{
+	lib.packages (pack)
+	{
+		output (path + "/" + get_file_name (pack.name) + ".fp", "w")
+		{
+			printf (
+				"# This footprint was automatically converted from Eagle library %s at %s\n# Library info: %s\n# Package info: %s\n\n",
+				filename (lib.name),
+				t2string (time ()),
+				lib.headline,
+				pack.headline
+			);
+			printf ("%s\n", pcb_package (pack));
+		}
+	}
+}

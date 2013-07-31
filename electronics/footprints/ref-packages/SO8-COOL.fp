@@ -1,0 +1,27 @@
+# This footprint was automatically converted from Eagle library ref-packages.lbr at 31.08.11 23:29
+# Library info: Reference Package
+# Package info: SMALL OUTLINE INTEGRATED CIRCUIT
+
+Element ["" "SMALL OUTLINE INTEGRATED CIRCUIT" "" "" 0 0 -20750 8000 1 100 ""] (
+	Pad [-7500 9000 -7500 12600 2400 2000 3000 "1" "1" "square"]
+	Pad [-2500 9000 -2500 12600 2400 2000 3000 "2" "2" "square"]
+	Pad [2500 9000 2500 12600 2400 2000 3000 "3" "3" "square"]
+	Pad [7500 9000 7500 12600 2400 2000 3000 "4" "4" "square"]
+	Pad [7500 -12600 7500 -9000 2400 2000 3000 "5" "5" "square"]
+	Pad [2500 -12600 2500 -9000 2400 2000 3000 "6" "6" "square"]
+	Pad [-2500 -12600 -2500 -9000 2400 2000 3000 "7" "7" "square"]
+	Pad [-7500 -12600 -7500 -9000 2400 2000 3000 "8" "8" "square"]
+	ElementLine [-9299 7098 9299 7098 600]
+	ElementLine [9299 7098 9299 -7098 600]
+	ElementLine [9299 -7098 -9299 -7098 600]
+	ElementLine [-9299 -7098 -9299 7098 600]
+	ElementLine [-8200 11300 -6800 11300 100] ElementLine [-6800 11300 -6800 7300 100] ElementLine [-6800 7300 -8200 7300 100] ElementLine [-8200 7300 -8200 11300 100]
+	ElementLine [-3200 11300 -1800 11300 100] ElementLine [-1800 11300 -1800 7300 100] ElementLine [-1800 7300 -3200 7300 100] ElementLine [-3200 7300 -3200 11300 100]
+	ElementLine [1800 11300 3200 11300 100] ElementLine [3200 11300 3200 7300 100] ElementLine [3200 7300 1800 7300 100] ElementLine [1800 7300 1800 11300 100]
+	ElementLine [6800 11300 8200 11300 100] ElementLine [8200 11300 8200 7300 100] ElementLine [8200 7300 6800 7300 100] ElementLine [6800 7300 6800 11300 100]
+	ElementLine [-8200 -7300 -6800 -7300 100] ElementLine [-6800 -7300 -6800 -11300 100] ElementLine [-6800 -11300 -8200 -11300 100] ElementLine [-8200 -11300 -8200 -7300 100]
+	ElementLine [-3200 -7300 -1800 -7300 100] ElementLine [-1800 -7300 -1800 -11300 100] ElementLine [-1800 -11300 -3200 -11300 100] ElementLine [-3200 -11300 -3200 -7300 100]
+	ElementLine [1800 -7300 3200 -7300 100] ElementLine [3200 -7300 3200 -11300 100] ElementLine [3200 -11300 1800 -11300 100] ElementLine [1800 -11300 1800 -7300 100]
+	ElementLine [6800 -7300 8200 -7300 100] ElementLine [8200 -7300 8200 -11300 100] ElementLine [8200 -11300 6800 -11300 100] ElementLine [6800 -11300 6800 -7300 100]
+	
+)

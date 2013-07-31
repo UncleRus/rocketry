@@ -1,0 +1,27 @@
+# This footprint was automatically converted from Eagle library ref-packages.lbr at 31.08.11 23:29
+# Library info: Reference Package
+# Package info: PLASTIC SMALL-OUTLINE PACKAGE, SO 8 JEDEC MO-153
+
+Element ["" "PLASTIC SMALL-OUTLINE PACKAGE, SO 8 JEDEC MO-153" "" "" 0 0 -11397 8956 1 100 ""] (
+	Pad [-3838 9842 -3838 12992 1574 2000 2174 "1" "1" "square"]
+	Pad [-1279 9842 -1279 12992 1574 2000 2174 "2" "2" "square"]
+	Pad [1279 9842 1279 12992 1574 2000 2174 "3" "3" "square"]
+	Pad [3838 9842 3838 12992 1574 2000 2174 "4" "4" "square"]
+	Pad [3838 -12992 3838 -9842 1574 2000 2174 "5" "5" "square"]
+	Pad [1279 -12992 1279 -9842 1574 2000 2174 "6" "6" "square"]
+	Pad [-1279 -12992 -1279 -9842 1574 2000 2174 "7" "7" "square"]
+	Pad [-3838 -12992 -3838 -9842 1574 2000 2174 "8" "8" "square"]
+	ElementArc [-2559 5118 1279 1279 0 360 800]
+	ElementLine [-5807 -8464 5807 -8464 800]
+	ElementLine [5807 -8464 5807 8464 800]
+	ElementLine [5807 8464 -5807 8464 800]
+	ElementLine [-5807 8464 -5807 -8464 800]
+	ElementLine [-4429 12992 -3248 12992 100] ElementLine [-3248 12992 -3248 8779 100] ElementLine [-3248 8779 -4429 8779 100] ElementLine [-4429 8779 -4429 12992 100]
+	ElementLine [-1870 12992 -688 12992 100] ElementLine [-688 12992 -688 8779 100] ElementLine [-688 8779 -1870 8779 100] ElementLine [-1870 8779 -1870 12992 100]
+	ElementLine [688 12992 1870 12992 100] ElementLine [1870 12992 1870 8779 100] ElementLine [1870 8779 688 8779 100] ElementLine [688 8779 688 12992 100]
+	ElementLine [3248 12992 4429 12992 100] ElementLine [4429 12992 4429 8779 100] ElementLine [4429 8779 3248 8779 100] ElementLine [3248 8779 3248 12992 100]
+	ElementLine [3248 -8779 4429 -8779 100] ElementLine [4429 -8779 4429 -12992 100] ElementLine [4429 -12992 3248 -12992 100] ElementLine [3248 -12992 3248 -8779 100]
+	ElementLine [688 -8779 1870 -8779 100] ElementLine [1870 -8779 1870 -12992 100] ElementLine [1870 -12992 688 -12992 100] ElementLine [688 -12992 688 -8779 100]
+	ElementLine [-1870 -8779 -688 -8779 100] ElementLine [-688 -8779 -688 -12992 100] ElementLine [-688 -12992 -1870 -12992 100] ElementLine [-1870 -12992 -1870 -8779 100]
+	ElementLine [-4429 -8779 -3248 -8779 100] ElementLine [-3248 -8779 -3248 -12992 100] ElementLine [-3248 -12992 -4429 -12992 100] ElementLine [-4429 -12992 -4429 -8779 100]
+)
